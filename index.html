@@ -134,7 +134,7 @@
 	                <span>Project complete</span>
                 </p>
 				<p>
-					<div><a href="https://leetcode.com/Damodar_Tirole/" class="btn btn-primary py-3 px-2" target="_blank">Leet Code</a>&nbsp;&nbsp;<a href="https://www.hackerrank.com/damodar_tirole04" class="btn btn-primary py-3 px-2" target="_blank">HackerRank</a>&nbsp;&nbsp;<a href="https://drive.google.com/file/d/10EHbvqTi-S6fqxRaTAA_vjT4-itO77_B/view" class="btn btn-primary py-3 px-2" target="_blank">Download CV</a></div>
+					<div><a href="https://leetcode.com/Damodar_Tirole/" class="btn btn-primary py-3 px-2" target="_blank">Leet Code</a>&nbsp;<a href="https://www.hackerrank.com/damodar_tirole04" class="btn btn-primary py-3 px-2" target="_blank">HackerRank</a>&nbsp;<a href="https://drive.google.com/file/d/10EHbvqTi-S6fqxRaTAA_vjT4-itO77_B/view?usp=sharing" class="btn btn-primary py-3 px-2" target="_blank">Download CV</a></div>
 				</p>
               </div>
 	          </div>
@@ -198,7 +198,7 @@
     		</div>
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-					<a href="https://drive.google.com/file/d/10EHbvqTi-S6fqxRaTAA_vjT4-itO77_B/view" class="btn btn-primary py-3 px-3" target="_blank">Download CV</a>
+					<a href="https://drive.google.com/file/d/10EHbvqTi-S6fqxRaTAA_vjT4-itO77_B/view?usp=sharing" class="btn btn-primary py-3 px-3" target="_blank">Download CV</a>
     			</div>
     		</div>
     	</div>
@@ -483,22 +483,23 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="mailto:damodar.tirole04@gmail.com" method="post" enctype="multipart/form-data" class="bg-light p-4 p-md-5 contact-form">
+           <form id="fcf-form-id" class="bg-light p-4 p-md-5 contact-form" method="post" action="contact-form-process.php">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+				<label for="Name" class="fcf-label">Your name</label>
+                <input type="text" id="Name" name="Name" class="form-control" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+				<label for="Email" class="fcf-label">Your email address</label>
+                <input type="email" id="Email" name="Email" class="form-control" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+				<label for="Message" class="fcf-label">Your message</label>
+                <textarea id="Message" name="Message" class="form-control" rows="7" maxlength="500" required></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
+            </form>
             </form>
           
           </div>
